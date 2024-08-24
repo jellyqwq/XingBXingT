@@ -3,7 +3,7 @@ name: Build and Package
 on:
   push:
     tags:
-      - 'v*'  # 当推送以 'v' 开头的标签时触发，比如 v1.0.0
+      - 'v*'  # 只有以 'v' 开头的标签触发，比如 v1.0.0
 
 jobs:
   build:
@@ -29,6 +29,14 @@ jobs:
       run: |
         cd output
         zip -r ../XingBXingT-${{ env.TAG_NAME }}-fabric-mc1.20.4.mrpack .
+
+    - name: Create GitHub Release
+      id: create_release
+      uses: actions/github-release@v1
+      with:
+        files: XingBXingT-${{ env.TAG_NAME }}-fabric-mc1.20.4.mrpack
+        tag_name: ${{ env.TAG_NAME }}
+        release_name: Release ${{ env.TAG_NAME }}
 
     - name: Upload artifact
       uses: actions/upload-artifact@v3

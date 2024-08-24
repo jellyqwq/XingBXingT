@@ -123,6 +123,6 @@ def merge_mods(versionId, name):
 
 if __name__ == '__main__':
     merge_mods(
-        versionId='v0.0.3-fabric-mc1.20.4',
+        versionId='v0.1.0-fabric-mc1.20.4',
         name='XingBXingT on Minecraft 1.20.4 (Fabric)'
     )
