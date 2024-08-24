@@ -1,7 +1,7 @@
 {
     "formatVersion": 1,
     "game": "minecraft",
-    "versionId": "v0.1.0-fabric-mc1.20.4",
+    "versionId": "v0.1.1-fabric-mc1.20.4",
     "name": "XingBXingT on Minecraft 1.20.4 (Fabric)",
     "summary": "XPlus PerioTable based on Minecraft 1.20.4 (Fabric)",
     "files": [
