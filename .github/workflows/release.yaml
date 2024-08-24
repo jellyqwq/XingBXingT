@@ -32,12 +32,12 @@ jobs:
 
     - name: Create GitHub Release
       id: create_release
-      uses: softprops/action-gh-release@v1
+      uses: actions/create-release@v1
       with:
         files: XingBXingT-${{ env.TAG_NAME }}-fabric-mc1.20.4.mrpack
-      env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        
+        tag_name: ${{ env.TAG_NAME }}
+        release_name: Release ${{ env.TAG_NAME }}
+
     - name: Upload artifact
       uses: actions/upload-artifact@v3
       with:
