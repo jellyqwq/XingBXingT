@@ -46,3 +46,11 @@ jobs:
       with:
         name: XingBXingT-${{ env.TAG_NAME }}-fabric-mc1.20.4.mrpack
         path: XingBXingT-${{ env.TAG_NAME }}-fabric-mc1.20.4.mrpack
+
+    - name: Upload Release Assets
+      id: upload assets
+      uses: softprops/action-gh-release@v1
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      with:
+        files: XingBXingT-${{ env.TAG_NAME }}-fabric-mc1.20.4.mrpack
