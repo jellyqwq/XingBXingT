@@ -1,0 +1,36 @@
+{
+  "main_menu": {
+    "top_left": [
+    
+    ],
+    "top_right": [
+    
+    ],
+    "bottom_left": [
+    
+    ],
+    "bottom_right": [
+    
+    ],
+    "mod_blacklist": [{"text":"XPlus 2.0 based on Minecraft 1.20.1 (Fabric)","clickEvent":{"action":"open_url","value":"https://www.mcbbs.net/thread-936198-1-1.html"},"hoverEvent":{"action":"show_text","contents":"Made with \u2764 by Wudji"}}
+
+    ]
+  },
+  "pause_menu": {
+    "top_left": [
+    
+    ],
+    "top_right": [
+    
+    ],
+    "bottom_left": [
+    
+    ],
+    "bottom_right": [{"text":"XPlus 2.0 based on Minecraft 1.20.1 (Fabric)","clickEvent":{"action":"open_url","value":"https://www.mcbbs.net/thread-936198-1-1.html"},"hoverEvent":{"action":"show_text","contents":"Made with \u2764 by Wudji"}}
+    
+    ],
+    "mod_blacklist": [
+
+    ]
+  }
+}

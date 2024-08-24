@@ -1,0 +1,37 @@
+name: Build and Package
+
+on:
+  push:
+    tags:
+      - 'v*'  # 当推送以 'v' 开头的标签时触发，比如 v1.0.0
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v3
+
+    - name: Get the tag name
+      id: get_tag_name
+      run: echo "TAG_NAME=${GITHUB_REF#refs/tags/}" >> $GITHUB_ENV
+
+    - name: Create output directory
+      run: mkdir -p output
+
+    - name: Copy files to output directory
+      run: |
+        cp -R overrides output/
+        cp modrinth.index.json output/
+
+    - name: Package the files
+      run: |
+        cd output
+        zip -r ../XingBXingT-${{ env.TAG_NAME }}-fabric-mc1.20.4.mrpack .
+
+    - name: Upload artifact
+      uses: actions/upload-artifact@v3
+      with:
+        name: XingBXingT-${{ env.TAG_NAME }}-fabric-mc1.20.4.mrpack
+        path: XingBXingT-${{ env.TAG_NAME }}-fabric-mc1.20.4.mrpack
