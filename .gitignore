@@ -1,3 +1,4 @@
 *.mrpack
 modlist.txt
 compress.py
+.wakatime-project
