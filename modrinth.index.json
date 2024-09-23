@@ -1,7 +1,7 @@
 {
     "formatVersion": 1,
     "game": "minecraft",
-    "versionId": "v0.1.6-fabric-mc1.20.4",
+    "versionId": "v0.1.7-fabric-mc1.20.4",
     "name": "XingBXingT on Minecraft 1.20.4 (Fabric)",
     "summary": "XPlus PerioTable based on Minecraft 1.20.4 (Fabric)",
     "files": [
@@ -1309,6 +1309,21 @@
                 "https://github.com/Hendrix-Shen/Tweak-My-Client/releases/download/dev-349/TweakMyClient-1.20.4-3.6.416+d193e20-beta.jar"
             ],
             "fileSize": 700144
+        },
+        {
+            "path": "mods/litematica-printer-1.20.4-3.2.1.jar",
+            "hashes": {
+                "sha1": "2e56e6e2eb45b27a700d524e5eb5c0aeb126e768",
+                "sha512": "a17acf54cfc740c36b653e6fd36030115d7961f7d174cd33e9225de7a1b1d43c578a76b4c08847d5d2c5ff5950ac0e813cd4bf29cda11b0b007d9748af10646f"
+            },
+            "env": {
+                "server": "required",
+                "client": "required"
+            },
+            "downloads": [
+                "https://cdn.modrinth.com/data/3llatzyE/versions/xeDghx1o/litematica-printer-1.20.4-3.2.1.jar"
+            ],
+            "fileSize": 81679
         }
     ],
     "dependencies": {

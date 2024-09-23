@@ -105,7 +105,7 @@ def merge_mods(versionId, name):
     modrinth_index_json['name'] = name
     modrinth_index_json['versionId'] = versionId
     
-    with open('modlist.txt', 'r', encoding='utf-8') as f:
+    with open('mod_url_comsumer.txt', 'r', encoding='utf-8') as f:
         unmerge_files = [i.strip('\n') for i in f.readlines()]
 
     for unmerge_file in unmerge_files:
@@ -123,6 +123,6 @@ def merge_mods(versionId, name):
 
 if __name__ == '__main__':
     merge_mods(
-        versionId='v0.1.0-fabric-mc1.20.4',
+        versionId='v0.1.7-fabric-mc1.20.4',
         name='XingBXingT on Minecraft 1.20.4 (Fabric)'
     )
